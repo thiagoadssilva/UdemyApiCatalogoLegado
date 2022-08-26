@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiCatalogo", "apiCatalogo\apiCatalogo.csproj", "{CD361B81-95FF-4DDE-A1B9-69F1B74A0C0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD361B81-95FF-4DDE-A1B9-69F1B74A0C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD361B81-95FF-4DDE-A1B9-69F1B74A0C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD361B81-95FF-4DDE-A1B9-69F1B74A0C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD361B81-95FF-4DDE-A1B9-69F1B74A0C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B69F3A5A-35EE-4DBC-A61C-3A44F83C3EC0}
+	EndGlobalSection
+EndGlobal
