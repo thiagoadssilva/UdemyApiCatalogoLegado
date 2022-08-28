@@ -8,5 +8,7 @@
         public string ImagemUrl { get; set; }
         public string Status { get; set; }
         public DateTime DataCadastro { get; set; }
+        /*Aqui estou criando um relacionamento entre categoria e produto*/
+        public ICollection<Produto> Produtos { get; set; }
     }
 }
