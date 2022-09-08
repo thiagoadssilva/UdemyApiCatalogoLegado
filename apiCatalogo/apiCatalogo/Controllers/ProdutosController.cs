@@ -1,6 +1,7 @@
 ﻿using apiCatalogo.Context;
 using apiCatalogo.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace apiCatalogo.Controllers
 {
@@ -17,7 +18,17 @@ namespace apiCatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get()
         {
-            return _context.Produtos.ToList();
+            return _context.Produtos.AsNoTracking().ToList();
+        }
+        [HttpGet("{id}")]
+        public ActionResult<Produto> get(int id)
+        {
+            var produto = _context.Produtos.AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
+            if(produto == null)
+            {
+                return NotFound();
+            }
+            return produto;
         }
     }
 }
