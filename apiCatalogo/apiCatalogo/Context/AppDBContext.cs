@@ -1,16 +1,16 @@
-﻿using apiCatalogo.Models;
+﻿using APICatalogo.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using System.IO;
 
-namespace apiCatalogo.Context
+namespace APICatalogo.Context
 {
-    /*Essa classe é responsável por permitir coodernar a funcionalidade do entityFrameWork Core para o modelo de entidades*/
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-        {
-
-        }
-
+        public AppDbContext(DbContextOptions<AppDbContext> options) 
+            : base(options)
+        { }
+       
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Produto> Produtos { get; set; }
     }
